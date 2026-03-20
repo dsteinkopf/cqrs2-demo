@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: query-service
+  datasource:
+    url: jdbc:postgresql://localhost:5433/cqrs2
+    username: cqrs2
+    password: cqrs2
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+  sql:
+    init:
+      mode: always
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
